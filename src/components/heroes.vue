@@ -64,7 +64,8 @@
                 <label class="label" for="description">cape counter</label>
                 <input
                   class="input"
-                  id="description"
+                  id="capeCounter"
+                  type="number"
                   v-model="selectedHero.capeCounter"
                 />
               </div>
@@ -91,7 +92,8 @@
           </footer>
         </div>
       </div>
-    </div>
+      </div>
+  </div>
   </div>
 </template>
 <script>
