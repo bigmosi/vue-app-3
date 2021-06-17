@@ -23,11 +23,10 @@
         </div>
         <div class="notification is-info" v-show="message">{{ message }}</div>
       </div>
-
       <div class="column is-4" v-if="selectedHero">
         <div class="card">
           <header class="card-header">
-            <p class="card-header-title">{{ selectedHero.firstName }}</p>
+            <p class="card-header-title">{{ fullName }}</p>
           </header>
           <div class="card-content">
             <div class="content">
@@ -81,7 +80,6 @@
     </div>
   </div>
 </template>
-
 <script>
 const ourHeroes = [
   {
@@ -116,6 +114,11 @@ export default {
       heroes: ourHeroes,
       selectedHero: undefined,
       message: '',
+    }
+  },
+  computed: {
+    fullName() {
+      return `${this.selectedHero.firstName} ${this.selectedHero.lastName}`; 
     }
   },
   methods: {
