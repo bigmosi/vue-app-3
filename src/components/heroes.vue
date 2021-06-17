@@ -60,6 +60,14 @@
                   v-model="selectedHero.description"
                 />
               </div>
+              <div class="field">
+                <label class="label" for="description">cape counter</label>
+                <input
+                  class="input"
+                  id="description"
+                  v-model="selectedHero.capeCounter"
+                />
+              </div>
             </div>
           </div>
           <footer class="card-footer">
@@ -92,18 +100,21 @@ const ourHeroes = [
     id: 20,
     firstName: 'Madelyn',
     lastName: 'Papa',
+    capeCounter: 1,
     description: 'the cat whisperer',
   },
   {
     id: 30,
     firstName: 'Haley',
     lastName: 'Papa',
+    capeCounter: 1,
     description: 'pen wielder',
   },
   {
     id: 40,
     firstName: 'Landon',
     lastName: 'Papa',
+    capeCounter: 1,
     description: 'arc trooper',
   },
 ];
