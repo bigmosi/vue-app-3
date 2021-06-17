@@ -60,6 +60,15 @@
                   v-model="selectedHero.description"
                 />
               </div>
+               <div class="field">
+                <label class="label" for="originDate">origin date</label>
+                <input
+                  class="input"
+                  id="originDate"
+                  type="number"
+                  v-model="selectedHero.originDate"
+                />
+              </div>
               <div class="field">
                 <label class="label" for="description">cape counter</label>
                 <input
